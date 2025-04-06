@@ -1,11 +1,9 @@
 <script>
-	import { lang } from '$lib/stores/lang';
 	import MainPageNew from '$comps/AllBlocks.svelte';
 	import meta_img from '$lib/images/meta__img__en.webp';
 	const title = 'How to Use Systems to Extract Profits from the Markets';
-	const desc = 'NO COST TRAINING FOR ASPIRING TRADERS - Why the Systematic Method is actually your best bet to make money on the markets!';
-
-	$lang = 'en';
+	const desc =
+		'NO COST TRAINING FOR ASPIRING TRADERS - Why the Systematic Method is actually your best bet to make money on the markets!';
 </script>
 
 <svelte:head>
