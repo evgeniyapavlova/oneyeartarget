@@ -14,7 +14,7 @@
 			<source srcset="{base}/images/photo1.avif" type="image/avif" />
 			<source srcset="{base}/images/photo1.webp" type="image/webp" />
 			<img
-				src="{base}/images/photo1.jpeg"
+				src="{base}/images/photo1.webp"
 				alt="Presenter: Andrea Unger, Founder of Unger Academy®"
 			/>
 		</picture>
@@ -48,7 +48,7 @@
 		<picture>
 			<source srcset="{base}/images/tp.avif" type="image/avif" />
 			<source srcset="{base}/images/tp.webp" type="image/webp" />
-			<img src="{base}/images/tp.jpeg" alt="Photo" />
+			<img src="{base}/images/tp.webp" alt="Trustpilot" />
 		</picture>
 	</div>
 
