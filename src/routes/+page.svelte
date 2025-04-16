@@ -1,6 +1,6 @@
 <script>
 	import MainPageNew from '$comps/AllBlocks.svelte';
-	import meta_img from '$lib/images/meta__img__en.webp';
+	import meta_img from '$lib/images/meta__img__en.jpg';
 	const title = 'How to Use Systems to Extract Profits from the Markets';
 	const desc =
 		'NO COST TRAINING FOR ASPIRING TRADERS - Why the Systematic Method is actually your best bet to make money on the markets!';
