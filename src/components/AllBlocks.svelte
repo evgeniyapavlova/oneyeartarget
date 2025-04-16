@@ -1,7 +1,32 @@
 <script>
+	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
+	import { searchString } from '$lib/stores/affs';
+	import TelegramLogo from './TelegramLogo.svelte';
+
+	onMount(() => {
+		const el = document.getElementById('tg-block');
+		if (!el) return;
+
+		const onScroll = () => {
+			if (window.scrollY > 0) {
+				el.classList.add('tg-block-visible');
+			} else {
+				el.classList.remove('tg-block-visible');
+			}
+		};
+
+		window.addEventListener('scroll', onScroll);
+
+		return () => {
+			window.removeEventListener('scroll', onScroll);
+		};
+	});
 </script>
 
+<a class="tg-block" id="tg-block" href="#">
+	<TelegramLogo /> Any other questions?
+</a>
 <section class="title">
 	<h2>NO COST TRAINING FOR ASPIRING TRADERS</h2>
 	<h1>How to Use Systems to Extract Profits from the Markets</h1>
@@ -13,19 +38,15 @@
 		<picture>
 			<source srcset="{base}/images/photo1.avif" type="image/avif" />
 			<source srcset="{base}/images/photo1.webp" type="image/webp" />
-			<img
-				src="{base}/images/photo1.jpeg"
-				alt="Presenter: Andrea Unger, Founder of Unger Academy®"
-			/>
+			<img src="{base}/images/photo1.jpg" alt="Presenter" />
 		</picture>
 		<div class="content-photo-caption">
 			Presenter: Andrea Unger, Founder of Unger Academy® and the only 4-Time World Trading
 			Champion*
 		</div>
 	</div>
-
 	<div class="content-cta">
-		<a href="#" class="button">
+		<a href="https://iqoption.com/en/register{$searchString}" class="button">
 			YES! Watch The Training Now!
 			<svg
 				version="1.1"
@@ -48,7 +69,7 @@
 		<picture>
 			<source srcset="{base}/images/tp.avif" type="image/avif" />
 			<source srcset="{base}/images/tp.webp" type="image/webp" />
-			<img src="{base}/images/tp.jpeg" alt="Photo" />
+			<img src="{base}/images/tp.jpg" alt="Trustpilot" />
 		</picture>
 	</div>
 
@@ -80,9 +101,6 @@
 		of the top Systematic Traders of all time!
 	</p>
 	<p class="content-note-small">
-		Andrea Unger and Unger Academy can not and do not make any guarantees about your ability to get
-		results or earn any money with our ideas, information, tools, or strategies. <br />
-
 		Nothing on this page, any of our websites, or any of our content or curriculum is a promise or
 		guarantee of results or future earnings, and we do not offer any legal, medical, tax or other
 		professional advice. Any financial numbers referenced here, or on any of our sites, are
@@ -92,7 +110,7 @@
 		change or your business or finances. You alone are responsible and accountable for your
 		decisions, actions and results in life, and by your registration here you agree not to attempt
 		to hold us liable for your decisions, actions or results, at any time, under any circumstance.
-		<br /><br />
+		<br /> <br />
 		This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed
 		by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
 	</p>

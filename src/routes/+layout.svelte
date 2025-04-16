@@ -1,21 +1,17 @@
 <script>
+	import { onMount } from 'svelte';
+	import { getURLParameters } from '$lib/utils/getAffParams';
+	import { searchString } from '$lib/stores/affs';
 	import '$lib/styles/styles.scss';
+
+	onMount(() => {
+		$searchString = getURLParameters();
+	});
 </script>
 
 <div class="app">
 	<slot />
 </div>
-<footer>
-	<section>
-		Copyright © Unger Academy® - All right reserved <br />
-
-		Unger Academy S.r.l. - Via Castellana 86/C, 30030 Martellago (VE), Italy - VAT N°: IT04662580275
-		<br />
-
-		<a href="#" target="_blank">Privacy Policy</a> - <a href="#" target="_blank">Terms of Use</a> -
-		<a href="#" target="_blank">Cookie Policy</a> - support@ungeracademy.com
-	</section>
-</footer>
 
 <style>
 	.app {
