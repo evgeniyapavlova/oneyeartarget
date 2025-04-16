@@ -259,3 +259,25 @@ footer {
 		color: #fff;
 	}
 }
+
+.tg-block {
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 8px;
+	background-color: #0088CC;
+	color: white;
+	padding: 10px 16px 10px 10px;
+	border-radius: 25px;
+	font-size: 16px;
+	font-weight: 500;
+	transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+	transform: translateY(calc(100% + 24px));
+
+	&-visible {
+		transform: none;
+	}
+}
