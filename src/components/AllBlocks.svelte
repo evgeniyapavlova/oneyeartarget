@@ -41,8 +41,7 @@
 			<img src="{base}/images/photo1.jpg" alt="Presenter" />
 		</picture>
 		<div class="content-photo-caption">
-			Presenter: Andrea Unger, Founder of Unger Academy® and the only 4-Time World Trading
-			Champion*
+			More than 100,000 traders have already used my strategy and made profit
 		</div>
 	</div>
 	<div class="content-cta">
@@ -74,7 +73,7 @@
 	</div>
 
 	<div class="content-text">
-		<h2>EXCLUSIVE TRAINING WITH ANDREA UNGER:</h2>
+		<h2>EXCLUSIVE TRAINING:</h2>
 		<ul class="content-list">
 			<li>
 				<strong>​The little-known approach</strong> used by most successful traders that doesn't require
