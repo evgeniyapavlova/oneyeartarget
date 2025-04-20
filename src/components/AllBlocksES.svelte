@@ -1,7 +1,8 @@
 <script>
 	import { base } from '$app/paths';
 	import { searchString } from '$lib/stores/affs';
-	import TelegramLogo from './TelegramLogo.svelte';
+	import Tg from './Tg.svelte';
+	import Photo from './Photo.svelte';
 </script>
 
 <section class="title">
@@ -12,11 +13,7 @@
 
 <section class="content">
 	<div class="content-photo">
-		<picture>
-			<source srcset="{base}/images/photo1.avif" type="image/avif" />
-			<source srcset="{base}/images/photo1.webp" type="image/webp" />
-			<img src="{base}/images/photo1.jpg" alt="Presenter" />
-		</picture>
+		<Photo />
 		<div class="content-photo-caption">
 			Más de 100.000 operadores ya han utilizado mi estrategia y han obtenido beneficios
 		</div>
@@ -44,9 +41,7 @@
 				</svg>
 			</a>
 
-			<a class="tg-block" id="tg-block" href="https://t.me/rodrigosalario">
-				<TelegramLogo /> ¿Alguna otra pregunta?
-			</a>
+			<Tg />
 		</div>
 		<picture>
 			<source srcset="{base}/images/tp.avif" type="image/avif" />
