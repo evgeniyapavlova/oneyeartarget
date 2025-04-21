@@ -3,5 +3,5 @@
 </script>
 
 <a class="tg-block" id="tg-block" href="https://t.me/rodrigosalario">
-	<TelegramLogo /> Any other questions?
+	<TelegramLogo /> <slot />
 </a>

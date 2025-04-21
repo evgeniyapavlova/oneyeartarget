@@ -41,7 +41,7 @@
 				</svg>
 			</a>
 
-			<Tg />
+			<Tg>Any other questions?</Tg>
 		</div>
 		<picture>
 			<source srcset="{base}/images/tp.avif" type="image/avif" />

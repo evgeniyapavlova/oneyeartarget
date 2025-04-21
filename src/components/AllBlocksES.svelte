@@ -41,7 +41,7 @@
 				</svg>
 			</a>
 
-			<Tg />
+			<Tg>¿Alguna otra pregunta?</Tg>
 		</div>
 		<picture>
 			<source srcset="{base}/images/tp.avif" type="image/avif" />
